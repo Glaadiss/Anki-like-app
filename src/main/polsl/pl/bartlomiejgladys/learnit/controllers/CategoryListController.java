@@ -18,21 +18,48 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * @Author Bartłomiej Gładys
+ * Controller for keeping connection with CategoryList model and first user's view.
+ *
+ * @author Bartlomiej Gladys
  * @Date 01/11/2018
- * @Version 1.0
+ * @version 1.0
  */
 
 public class CategoryListController extends Controller {
+    /**
+     * Simplify dynamic buttons creation in table.
+     */
     DynamicView dynamicView;
+
+    /**
+     * Table for keeping list of categories.
+     */
     @FXML
     private TableView<Category> tableView;
+
+    /**
+     * Column for category name.
+     */
     @FXML
     private TableColumn<Category, String> name;
+
+    /**
+     * TextField for new category name.
+     */
     @FXML
     private TextField addCategoryInput;
+
+    /**
+     * Observable list for table's view refreshing.
+     */
     private ObservableList categoryList;
 
+    /**
+     * Run after fxml file initialization.
+     *
+     * @param location  include path to fxml file
+     * @param resources include Resources objects
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Platform.runLater(() -> {
@@ -44,6 +71,11 @@ public class CategoryListController extends Controller {
         });
     }
 
+    /**
+     * Handle addCategory user's action.
+     *
+     * @param actionEvent event passed with user's click
+     */
     @FXML
     private void addCategory(ActionEvent actionEvent) {
         String name = addCategoryInput.getText();
@@ -57,7 +89,12 @@ public class CategoryListController extends Controller {
         addCategoryInput.setText("");
     }
 
-    private void showErrorNameAlert(String message){
+    /**
+     * Show alert on client side informing about bad input data.
+     *
+     * @param message from NameFormatException
+     */
+    private void showErrorNameAlert(String message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Response from Application");
         alert.setHeaderText("Application encountered a problem with category's name");
@@ -65,8 +102,14 @@ public class CategoryListController extends Controller {
         alert.showAndWait();
     }
 
+
+    /**
+     * Handle user's click action on dynamic added buttons
+     */
     private void handleDynamicData() {
-        dynamicView = new DynamicView<Category>(tableView, categoryList, getModel());
+
+        dynamicView = new DynamicView<Category>().setTableView(tableView).setObservableList(categoryList).setBase(getModel());
+
         dynamicView.addButtonToTable("GO", data -> {
             Category category = (Category) data;
             moveToShowCard(category.getCards());

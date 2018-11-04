@@ -11,9 +11,11 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @Author Bartłomiej Gładys
+ * Tests for SortBySelector Comparator
+ *
+ * @author Bartlomiej Gladys
  * @Date: 04/11/2018
- * @Version: 1.0
+ * @version: 1.0
  */
 
 public class SortBySelectorTest {
@@ -24,7 +26,7 @@ public class SortBySelectorTest {
     SortBySelector comparator;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         card1 = new Card();
         card2 = new Card();
         first = card1.getSelector();
@@ -59,7 +61,7 @@ public class SortBySelectorTest {
     }
 
     @Test
-    public void compareReturnNegativeIfFirstHasMoreCycles() {
+    public void compareReturnPositiveIfFirstHasMoreCycles() {
         //given
         setTheSameAnswerTypes();
         first.setCycle(5);
@@ -69,11 +71,11 @@ public class SortBySelectorTest {
         int result = comparator.compare(card1, card2);
 
         //then
-        assertTrue(result < 0);
+        assertTrue(result > 0);
     }
 
     @Test
-    public void compareReturnPositiveIfFirstHasLessCycles() {
+    public void compareReturnNegativeIfFirstHasLessCycles() {
         //given
         setTheSameAnswerTypes();
         first.setCycle(1);
@@ -83,7 +85,7 @@ public class SortBySelectorTest {
         int result = comparator.compare(card1, card2);
 
         //then
-        assertTrue(result > 0);
+        assertTrue(result < 0);
     }
 
     @Test

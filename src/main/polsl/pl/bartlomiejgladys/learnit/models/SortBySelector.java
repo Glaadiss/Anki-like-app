@@ -6,12 +6,22 @@ import java.util.Comparator;
 import java.util.Date;
 
 /**
- * @Author Bartłomiej Gładys
+ * Comparator class for sorting cards
+ *
+ * @author Bartlomiej Gladys
  * @Date 04/11/2018
- * @Version 1.0
+ * @version 1.0
  */
 
 public class SortBySelector implements Comparator<Card> {
+
+    /**
+     * Default compare method
+     *
+     * @param o1 first Card
+     * @param o2 second Card
+     * @return number indicating comparing result
+     */
     @Override
     public int compare(Card o1, Card o2) {
         Selector first = o1.getSelector();
@@ -19,7 +29,14 @@ public class SortBySelector implements Comparator<Card> {
         return compareSelectors(first, second);
     }
 
-    private int compareSelectors(Selector first, Selector second){
+    /**
+     * Default compare method
+     *
+     * @param first  Selector
+     * @param second Selector
+     * @return number indicating comparing result
+     */
+    private int compareSelectors(Selector first, Selector second) {
         int isFirstWeaker = checkAnswerType(first.getAnswerType(), second.getAnswerType());
         if (isFirstWeaker != 0) {
             return isFirstWeaker;
@@ -33,14 +50,36 @@ public class SortBySelector implements Comparator<Card> {
         return checkUpdateDate(first.getUpdatedAt(), second.getUpdatedAt());
     }
 
+    /**
+     * Comparing cycle's numbers
+     *
+     * @param first  cycle's number
+     * @param second cycle's number
+     * @return number indicating cycle's comparison
+     */
     private int checkCycles(int first, int second) {
-        return second - first;
+        return first - second;
     }
 
+
+    /**
+     * Comparing updateAt dates of given selectors
+     *
+     * @param first  updateAt date
+     * @param second updateAt date
+     * @return date's comparison result
+     */
     private int checkUpdateDate(Date first, Date second) {
         return first.compareTo(second);
     }
 
+    /**
+     * Comparing AnswerTypes of given selectors
+     *
+     * @param first  AnswerType
+     * @param second AnswerType
+     * @return answerType's comparison result
+     */
     private int checkAnswerType(AnswerType first, AnswerType second) {
         if (first == second) {
             return 0;

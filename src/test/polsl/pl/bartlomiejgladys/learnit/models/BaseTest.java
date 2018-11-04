@@ -11,16 +11,18 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 /**
- * @Author Bartłomiej Gładys
+ * Tests for base model
+ *
+ * @author Bartlomiej Gladys
  * @Date 04/11/2018
- * @Version 1.0
+ * @version 1.0
  */
 
 public class BaseTest {
     Base<Integer> intWrapper;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         intWrapper = new Base<>();
 
     }

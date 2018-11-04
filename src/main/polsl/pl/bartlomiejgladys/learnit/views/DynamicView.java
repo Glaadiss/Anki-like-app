@@ -12,23 +12,66 @@ import polsl.pl.bartlomiejgladys.learnit.models.Base;
 import java.util.function.Consumer;
 
 /**
- * @Author Bartłomiej Gładys
+ * Class for handling dynamic data in tables
+ *
+ * @author Bartlomiej Gladys
  * @Date 03/11/2018
- * @Version 1.0
+ * @version 1.0
  */
 
 public class DynamicView<T> {
+    /**
+     * Table in calling controller
+     */
     private TableView<T> tableView;
+    /**
+     * Observable list to refresh data on
+     */
     private ObservableList<T> observableList;
+    /**
+     * Model indicating data types
+     */
     private Base<T> base;
 
-    public DynamicView(TableView table, ObservableList list, Base model) {
-        tableView = table;
-        observableList = list;
-        base = model;
+    /**
+     * tableView builder method
+     *
+     * @param tableView
+     * @return dynamicView object
+     */
+    public DynamicView<T> setTableView(TableView<T> tableView) {
+        this.tableView = tableView;
+        return this;
     }
 
+    /**
+     * tableView builder method
+     *
+     * @param observableList
+     * @return dynamicView object
+     */
+    public DynamicView<T> setObservableList(ObservableList<T> observableList) {
+        this.observableList = observableList;
+        return this;
+    }
 
+    /**
+     * tableView builder method
+     *
+     * @param base
+     * @return dynamicView object
+     */
+    public DynamicView<T> setBase(Base<T> base) {
+        this.base = base;
+        return this;
+    }
+
+    /**
+     * Main dynamicView's method for adding buttons.
+     *
+     * @param text     for button
+     * @param consumer callback after user's action
+     */
     public void addButtonToTable(String text, Consumer<T> consumer) {
         TableColumn<T, Void> colBtn = new TableColumn();
 

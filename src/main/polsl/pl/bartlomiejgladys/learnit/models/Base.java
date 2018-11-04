@@ -4,23 +4,43 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author Bartłomiej Gładys
+ * Base class for CardList and CategoryList
+ *
+ * @author Bartlomiej Gladys
  * @Date 03/11/2018
- * @Version 1.0
+ * @version 1.0
  */
 
 public class Base<A> {
+    /**
+     * Container for elements
+     */
     private List<A> elements = new ArrayList<>();
 
+    /**
+     * Giving all elements
+     *
+     * @return all elements
+     */
     public List<A> getAll() {
         return elements;
     }
 
-    public void remove(A model) {
-        elements.remove(model);
+    /**
+     * Remove one object from container
+     *
+     * @param obj to remove
+     */
+    public void remove(A obj) {
+        elements.remove(obj);
     }
 
-    public void add(A model) {
-        elements.add(model);
+    /**
+     * Add one object to container
+     *
+     * @param obj to add
+     */
+    public void add(A obj) {
+        elements.add(obj);
     }
 }

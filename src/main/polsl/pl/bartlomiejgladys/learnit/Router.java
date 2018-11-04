@@ -10,52 +10,94 @@ import polsl.pl.bartlomiejgladys.learnit.models.*;
 import java.io.IOException;
 
 /**
- * @Author Bartłomiej Gładys
+ * Router class which handle controller's flow and pass particular models to them
+ *
+ * @author Bartlomiej Gladys
  * @Date 03/11/2018
- * @Version 1.0
+ * @version 1.0
  */
 
 public class Router {
+    /**
+     * First Controller showing CategoryList
+     */
     private Controller categoryListView;
+
+    /**
+     * Controller for learning state
+     */
     private Controller showCardView;
+
+    /**
+     * Controller for editing cardLists inside categories
+     */
     private Controller editCategoryView;
+
+    /**
+     * Main stage
+     */
     private Stage window;
 
-    public Router(Stage primaryStage) throws IOException, NameFormatException {
+    /**
+     * Router's Constructor
+     *
+     * @param primaryStage passed from FX
+     * @throws NameFormatException
+     */
+    public Router(Stage primaryStage) {
         window = primaryStage;
         CategoryList categoryList = new CategoryList();
-        categoryListView = getView("CategoryListView", categoryList);
-
+        categoryListView = getController("CategoryListView", categoryList);
         setScene(categoryListView);
     }
 
+    /**
+     * Used to back to main view
+     */
     public void moveToCategoryList() {
         setScene(categoryListView);
     }
 
+    /**
+     * Set new model for controller based on category
+     *
+     * @param cardList model passed to controller
+     */
     public void moveToShowCard(CardList cardList) {
-        showCardView = getView("ShowCardView", cardList);
+        showCardView = getController("ShowCardView", cardList);
         setScene(showCardView);
     }
 
+    /**
+     * Set new model for controller based on category
+     *
+     * @param category model passed to controller
+     */
     public void moveToEditCategory(Category category) {
-        editCategoryView = getView("EditCategoryView", category.getCards());
+        editCategoryView = getController("EditCategoryView", category.getCards());
         editCategoryView.setTitle(category.getName());
         setScene(editCategoryView);
     }
 
+    /**
+     * Method for moving within controllers
+     *
+     * @param controller to active
+     */
     private void setScene(Controller controller) {
         window.setScene(controller.getScene());
     }
 
-    Controller getView(String viewName, Base model) {
+    /**
+     * Get controller based on chosen view
+     *
+     * @param viewName indicating FXML view
+     * @param model    passed to controller
+     * @return controller
+     */
+    private Controller getController(String viewName, Base model) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("views/" + viewName + ".fxml"));
-        Parent view;
-        try {
-            view = fxmlLoader.load();
-        } catch (IOException e) {
-            return null;
-        }
+        Parent view = getView(fxmlLoader);
         Controller controller = fxmlLoader.getController();
         controller.setModel(model);
         controller.setScene(new Scene(view, 600, 400));
@@ -63,5 +105,20 @@ public class Router {
         return controller;
     }
 
+    /**
+     * get FXML view
+     *
+     * @param fxmlLoader for fxml loading
+     * @return FXML view
+     */
+    private Parent getView(FXMLLoader fxmlLoader) {
+        Parent view;
+        try {
+            view = fxmlLoader.load();
+        } catch (IOException e) {
+            return null;
+        }
+        return view;
+    }
 
 }
