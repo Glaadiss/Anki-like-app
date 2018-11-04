@@ -6,32 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd602c02-2f4f-4c1e-963e-516ac4a51465" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/CardListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/CategoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/SelectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/FxInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/FxInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/LearnIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/LearnIt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/Router.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/controllers/CategoryListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/controllers/CategoryListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/controllers/EditCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/controllers/EditCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/controllers/ShowCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/controllers/ShowCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/learnIt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/learnIt.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/CardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/CardList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/CategoryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/CategoryList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/NameFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/NameFormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Selector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Selector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/SortBySelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/SortBySelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/views/CategoryListView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/views/CategoryListView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/views/DynamicView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/views/DynamicView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/views/EditCategoryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/views/EditCategoryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/views/ShowCardView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/views/ShowCardView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/SortBySelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/SortBySelectorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,6 +33,7 @@
           <entry key="fxml" value="25" />
           <entry key="iml" value="2" />
           <entry key="java" value="211" />
+          <entry key="md" value="1" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
@@ -65,6 +42,7 @@
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="211" />
+          <entry key="Markdown" value="1" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -74,11 +52,13 @@
           <entry key="ft" value="175" />
           <entry key="fxml" value="384" />
           <entry key="java" value="22627" />
+          <entry key="md" value="678" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="22627" />
+          <entry key="Markdown" value="678" />
           <entry key="PLAIN_TEXT" value="34" />
           <entry key="VTL" value="175" />
           <entry key="XML" value="384" />
@@ -152,14 +132,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+            <state relative-caret-position="233">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="397" selection-start-line="6" selection-start-column="397" selection-end-line="6" selection-end-column="397" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -184,15 +176,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Card.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -295,6 +278,7 @@
         <option value="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/SelectorTest.java" />
         <option value="$PROJECT_DIR$/src/test/polsl/pl/bartlomiejgladys/learnit/models/SortBySelectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Base.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -357,7 +341,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541371005057" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541371424469" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -499,7 +483,7 @@
       <workItem from="1541104967364" duration="2424000" />
       <workItem from="1541107947559" duration="44051000" />
       <workItem from="1541356432424" duration="3871000" />
-      <workItem from="1541360367212" duration="10350000" />
+      <workItem from="1541360367212" duration="11013000" />
     </task>
     <servers />
   </component>
@@ -536,10 +520,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67207000" />
+    <option name="totallyTimeSpent" value="67870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17412141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -887,11 +872,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/polsl/pl/bartlomiejgladys/learnit/models/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        <state relative-caret-position="233">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="397" selection-start-line="6" selection-start-column="397" selection-end-line="6" selection-end-column="397" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
