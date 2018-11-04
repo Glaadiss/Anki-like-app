@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.gluonhq:charm-down-desktop:2.0.1" type="repository">
+    <properties maven-id="com.gluonhq:charm-down-desktop:2.0.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gluonhq/charm-down-desktop/2.0.1/charm-down-desktop-2.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/gluonhq/charm-down-common/2.0.1/charm-down-common-2.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

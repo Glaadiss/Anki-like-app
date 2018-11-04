@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="polsl.pl.bartlomiejgladys.learnit.controllers.CategoryListController">
+    <children>
+        <Button layoutX="373.0" layoutY="67.0" mnemonicParsing="false" onAction="#addCategory" text="Add category"/>
+        <TextField fx:id="addCategoryInput" layoutX="125.0" layoutY="67.0" prefHeight="32.0" prefWidth="189.0"/>
+        <TableView fx:id="tableView" layoutY="118.0" prefHeight="200.0" prefWidth="572.0">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="75.0"/>
+                <TableColumn prefWidth="75.0"/>
+            </columns>
+        </TableView>
+        <Label layoutX="10.0" prefHeight="18.0" prefWidth="209.0" text="LearnIT" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="System Italic" size="32.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

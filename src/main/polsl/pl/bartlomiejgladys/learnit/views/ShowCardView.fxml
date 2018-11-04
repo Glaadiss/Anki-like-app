@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="polsl.pl.bartlomiejgladys.learnit.controllers.ShowCardController">
+    <children>
+        <Button fx:id="correctButton" onAction="#clickCorrect" graphicTextGap="0.0" layoutX="78.0" layoutY="320.0"
+                mnemonicParsing="false" style="-fx-background-color: #70bb70;" text="I know that :)">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Button>
+        <Button fx:id="mediumButton" onAction="#clickMedium" graphicTextGap="0.0" layoutX="264.0" layoutY="320.0"
+                mnemonicParsing="false" style="-fx-background-color: ffff00;" text="Not sure :|">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Button>
+        <Button fx:id="failureButton" onAction="#clickFailure" graphicTextGap="0.0" layoutX="420.0" layoutY="320.0"
+                mnemonicParsing="false" style="-fx-background-color: #dd0033;" text="Lets repeat :(">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Button>
+        <ToggleButton fx:id="cardToggle" onAction="#toggle" layoutX="253.0" layoutY="23.0" mnemonicParsing="false"
+                      prefHeight="40.0" prefWidth="131.0" text="Toggle">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </ToggleButton>
+        <Label fx:id="cardText" alignment="CENTER" layoutX="78.0" layoutY="82.0" opacity="0.9" prefHeight="217.0"
+               prefWidth="473.0" style="-fx-background-color: #000;" text="This is the question" textAlignment="CENTER"
+               textFill="WHITE">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button fx:id="cardBack" onAction="#moveToCategoryList" layoutY="1.0" mnemonicParsing="false" prefHeight="27.0"
+                prefWidth="77.0" text="BACK"/>
+    </children>
+    <effect>
+        <ColorAdjust/>
+    </effect>
+</AnchorPane>
